@@ -1,0 +1,386 @@
+
+:root{
+    --orange:orange;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif ;
+    text-transform: capitalize;
+}
+::selection{
+    background: var(--orange);
+    color: grey;
+}
+html{
+    font-size: 55%;
+    overflow-x: hidden;
+}
+html ::-webkit-scrollbar{
+    width: 20px;
+}
+html ::-webkit-scrollbar-track{
+    background: black;
+}
+html ::-webkit-scrollbar-thumb{
+    background: var(--orange)
+}
+body{
+    background: #111;
+    overflow: hidden;
+    padding-left: 570px;
+}
+section{
+    min-height: 100vh;
+    padding: 16px;
+}
+.btn{
+    padding: 20px 20px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    border-radius: 5rem;
+}
+.btn i{
+    padding: 0 4rem;
+    font-size: 15px;
+}
+.btn:hover{
+    background: var(--orange);
+}
+.heading{
+    text-align: center;
+    margin: 96px;
+    font-size: 3.5rem;
+    padding: 20px;
+    border-bottom: 7px solid #fff4;
+    color: white;
+}
+.heading span{
+    color: var(--orange);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 560px;
+    background: gray;
+    align-items: center;
+    justify-content:center;
+    flex-flow: column;
+    text-align: center;
+}
+header .user img{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+header .user .name{
+    font-size: 2.4rem;
+    color: green;
+}
+header .navbar{
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 20px 24px;
+}
+header .navbar ul li a{
+    display: block;
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    font-size: 1rem;
+    border-radius: 5rem;
+}
+header .navbar ul li a:hover{
+    background: var(--orange);
+}
+#Menu{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 24px 24px;
+    z-index: 1000;
+}
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 0 15rem;
+}
+.home span{
+    color: var(--orange);
+}
+
+.home h3{
+    font-size: 2rem;
+    color: aqua;
+}
+.home h1{
+    font-size: 4rem;
+    color: white;
+}
+.home p{
+    font-size: 1.8rem;
+    color: blueviolet;
+    padding: 16px 0;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px 0;
+}
+.about .row .info{
+    flex: 1 1 45rem;
+    padding: 32px 16px;
+    padding-left: 6rem;
+}
+.about .row .info h3{
+    font-size: 1.8rem;
+    color: var(--orange);
+    padding: 12px 0;
+    font-weight: normal;
+}
+.about .row .info h3 span{
+    color: aquamarine;
+    padding: 5px;
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 16px 0;
+    padding-left: 3rem;
+}
+.education .box-container .box{
+    width: 430px;
+    margin: 4rem 1rem;
+    padding-left: 40px;
+    border-left: 2rem solid white;
+    position: relative;
+}
+.education .box-container .box span{
+    font-size: 1.5rem;
+    background: #222;
+    color: wheat;
+}
+.education .box-container .box h3{
+    font-size: 2.1rem;
+    color: brown;
+    padding-top: 20px;
+}
+.education .box-container .box i{
+    position: relative;
+    top: -1.5rem;
+    left: -2.5rem;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    background: var(--orange);
+}
+.portfolio .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+.portfolio .box-container .box{
+    height: 400px;
+    width: 500px;
+    border-radius: 1rem;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.portfolio .box-container .box:hover img{
+    transform: scale(1.4);
+}
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact .row .content{
+    flex: 1 1 560px;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.contact .row .form{
+    flex: 1 1 660px;
+    padding: 20px;
+    margin: 25px;
+    margin-bottom: 40px;
+}
+.contact .row .form .box{
+    padding: 16px;
+    margin: 16px 0;
+    background: skyblue;
+    color: white;
+    text-transform: none;
+    font-size: 1.5rem;
+    width: 100%;
+}
+.contact .row .form .message{
+    height: 55px;
+    resize: none;
+}
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: pink;
+    font-size: 2.4rem;
+    padding-bottom: 32px;
+}
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: cornflowerblue;
+    text-transform: none;
+    font-weight: normal;
+}
+.contact .row .content .info h3 i{
+    padding-right: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1200px){
+        html{
+            font-size: 65%;
+    }
+    .home{
+        padding: 1rem 2rem;
+    }
+}
+
+
+
+@media(max-width:910px){
+    header{
+        left: -120%;
+    }
+    #menu{
+        display: block;
+    }
+    header.toggle{
+        left: 0%;
+    }
+    body{
+        padding-left: 0;
+    }
+
+}
+@media(max-width:400x){
+        html{
+            font-size: 50%;
+        }   
+        .about .row .counter .box{
+            width: 100%;
+        }
+        .education .box-container .box{
+            width: 100%;
+        }
+}
+
+
+@media(max-width:300px){
+    header{
+        width: 100vh;
+    }
+    .heading{
+        margin: 0 40px;
+        width: 100%;
+    }
+    .portfolio .box-container .box{
+        width: 100%;
+    }
+    .contact.row form{
+        margin-top: 2rem 0;
+    }
+}
